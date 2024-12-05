@@ -12,7 +12,7 @@ export default function Home() {
 
       <div className="flex flex-col gap-[12px]">
         <div className="w-[82px] h-[29px] bg-lightYellow preset-md-bold text-darkGray flex items-center justify-center rounded-[4px]">Learning</div>
-        <div className="preset-md text-darkGray">Published 21 Dec 2023</div>
+        <div className="preset-md text-darkGray">Published 5 Dec 2024</div>
         <Link href={"#"} className="preset-lg-bold text-darkGray hover:text-lightYellow">HTML & CSS foundations</Link>
         <div className="preset-sm text-lightGray">These languages are the backbone of every website, defining structure, content, and presentation.</div>
       </div>
@@ -23,9 +23,9 @@ export default function Home() {
       </Link>
     </div>
 
-    <div className="attribution">
-      Challenge by <Link href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</Link>.
-      Coded by <Link href="https://www.frontendmentor.io/profile/ayPromise">Danylo The Inventor</Link>.
+    <div className="text-[13px] text-center absolute bottom-0 mb-10">
+      Challenge by <Link href="https://www.frontendmentor.io?ref=challenge" className="text-indigo-700" target="_blank">Frontend Mentor</Link>.
+      Coded by <Link href="https://www.frontendmentor.io/profile/ayPromise" className="text-indigo-700">Danylo The Inventor</Link>.
     </div>
   </div>
 }
