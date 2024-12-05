@@ -4,7 +4,7 @@ import UserProfileImage from "@/public/image-avatar.webp"
 import Link from "next/link"
 
 export default function Home() {
-  return <div className="min-h-screen bg-lightYellow flex justify-center items-center">
+  return <div className="min-h-screen bg-lightYellow flex flex-col gap-[20px] justify-center items-center">
     <div className="w-[327px] xl:w-[384px] h-[522px] p-[24px] rounded-[20px] bg-white border border-darkGray shadow-darkGray shadow-custom flex flex-col gap-[24px]">
       <Image unoptimized src={BlogImage} alt="blog-card-image" style={{ width: 'fill', height: '200px', objectFit: 'cover' }} className="rounded-[10px]">
 
@@ -21,6 +21,11 @@ export default function Home() {
         <Image unoptimized src={UserProfileImage} alt="user-profile-image" width={32} height={32}></Image>
         <div className="preset-md-bold text-darkGray">Greg Hooper</div>
       </Link>
+    </div>
+
+    <div className="attribution">
+      Challenge by <Link href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</Link>.
+      Coded by <Link href="https://www.frontendmentor.io/profile/ayPromise">Danylo The Inventor</Link>.
     </div>
   </div>
 }
