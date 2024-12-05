@@ -2,20 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.preset-lg-bold{
+  @apply font-bold text-[24px] leading-[150%] tracking-normal
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.preset-sm{
+  @apply font-medium text-[16px] leading-[150%] tracking-normal
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.preset-md{
+  @apply font-medium text-[14px] leading-[150%] tracking-normal
+}
+
+.preset-md-bold{
+  @apply font-bold text-[14px] leading-[150%] tracking-normal
 }
